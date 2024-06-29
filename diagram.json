@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "author": "Abdul Hakim Prima Yuniarto",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -21.66, "left": 57.54, "attrs": {} },
+    { "type": "board-ssd1306", "id": "oled1", "top": 31.94, "left": -95.77, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "oled1:SDA", "esp:D21", "gold", [ "v-89.27", "h210.47", "v80.4" ] ],
+    [ "oled1:SCL", "esp:D22", "green", [ "v-70.85", "h208.92", "v40.09" ] ],
+    [ "oled1:GND", "esp:GND.2", "black", [ "v-10.36", "h-43.28", "v94.6" ] ],
+    [ "oled1:VCC", "esp:VIN", "red", [ "v-16.83", "h-59.69", "v110.57" ] ]
+  ],
+  "dependencies": {}
+}
